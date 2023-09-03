@@ -18,3 +18,6 @@ to use
 
 ---
 Polybar
+<h6> Contains </h6>
+-[Now_playing.py]("Installing Yay")
+- My bar customization 
