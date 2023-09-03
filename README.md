@@ -19,5 +19,8 @@ to use
 ---
 Polybar
 <h6> Contains </h6>
--[Now_playing.py]("Installing Yay")
-- My bar customization 
+
+- [Now_playing.py](https://github.com/d093w1z/polybar-now-playing)
+- my bar customization
+![My Polybar](https://github.com/Seija-Kijin/dotfiles/blob/main/Polybar.png)
+
