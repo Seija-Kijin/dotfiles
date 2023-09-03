@@ -1,6 +1,11 @@
 # dotfiles
 My Arch Linux Dotfiles
 
+to use
+
+`git clone https://github.com/Seija-Kijin/dotfiles && cd dotfiles && bash install.sh`
+
+
 
 
 ----
