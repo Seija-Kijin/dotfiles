@@ -1,3 +1,4 @@
+#!/bin/sh
 printf '\033c'
 echo "Mankind is dead"
 sleep 0.8
