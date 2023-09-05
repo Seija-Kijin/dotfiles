@@ -72,9 +72,7 @@ ZSH_THEME="nicoulaj"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	colored-man-pages
-	zsh-interactive-cd.plugin.zsh
-			
+	colored-man-pages		
 )
 
 source $ZSH/oh-my-zsh.sh
