@@ -6,17 +6,7 @@ sleep 0.8
 echo "Blood is fuel"
 sleep 0.8
 echo "Kawakijin's Dotfile Deployer loaded..."
-echo "Begining post install, please wait warmly..."
-
-
-
-# POST INSTALL
-# Install yay 
-echo "Installing Yay"
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
+echo "Begining dotfile deployment, please wait warmly..."
 
 # Promt to install packages 
 read -r -p "Would you like to install packages in your .pkglist? [y/N] " response
