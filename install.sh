@@ -34,7 +34,7 @@ echo "Applying Neofetch config"
 mv -i .config/neofetch/config.conf ~/.config/neofetch
 read -r -p "Do you have an image you would like to use in neofetch? (Nyarch is included in .config/neofetch/Nyarch.png) [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
-then read -r -p "Enter the path to the image (Example: ~/Desktop/Picture.png): " image && echo $image  && cp "$image" /$homesweethome/.config/neofetch && sed -i -e "s/THEIMAGEGOESHERE/$image/g" $homesweethome/.config/neofetch/config.conf
+then read -r -p "Enter the path to the image (Example: /home/kawa/Desktop/Picture.png): " image && echo $image  && cp "$image" /$homesweethome/.config/neofetch && sed -i -e 's|THEIMAGEGOESHERE|$image|g' $homesweethome/.config/neofetch/config.conf
 else echo "Skipping Neofetch Image" 
 fi                                                                                                                   
 
