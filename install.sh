@@ -10,6 +10,7 @@ echo "Kawakijin's Dotfile Deployer loaded..."
 echo "Begining dotfile deployment, please wait warmly..."
 
 user=$(whoami)
+homesweethome="$HOME"
 
 # Promt to install packages 
 read -r -p "Would you like to install packages in the .pkglist? [y/N] " response
@@ -30,14 +31,10 @@ mv -i .config/polybar ~/.config/polybar
              
 echo "Applying Neofetch config"
 #Double check that this works
-mv -i .config/neofetch ~/.config/neofetch
+mv -i .config/neofetch/config.conf ~/.config/neofetch
 read -r -p "Do you have an image you would like to use in neofetch? (Nyarch is included in .config/neofetch/Nyarch.png) [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
-then printf "%s"  "Enter the path to the image (Example: ~/Desktop/Picture.png): " && read -r -p "$image" && cp "$image" ~/.config/neofetch && sed -i -e "s/THEIMAGEGOESHERE/$image/g" ~/.config/neofetch
+read -r -p "Enter the path to the image (Example: ~/Desktop/Picture.png): " image && echo $image  && cp "$image" /$homesweethome/.config/neofetch && sed -i -e "s/THEIMAGEGOESHERE/$image/g" $homesweethome/.config/neofetch/config.conf
 else echo "Skipping Neofetch Image" 
 fi                                                                                                                   
-
-
-#TODO research printf and see if that's better than using echo for user input
-
 
