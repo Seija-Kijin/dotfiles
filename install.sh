@@ -26,6 +26,7 @@ echo "disabling Baloo"
 balooctl disable
 
 # Prompt for polybar
+#check if this can overwrite files properly
 read -r -p "Would you like to Apply the Polybar customisation [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then echo "Installing and applying polybar customisation" &&  cp -R .config/polybar ~/.config && rm -R .config/polybar
@@ -34,7 +35,6 @@ fi
 
 # Neofetch
 echo "Applying Neofetch config"
-#Double check that this works
 mv -i .config/neofetch/config.conf ~/.config/neofetch
 read -r -p "Do you have an image you would like to use in neofetch? (Nyarch is included in .config/neofetch/Nyarch.png) [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
