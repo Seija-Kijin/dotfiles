@@ -27,7 +27,7 @@ balooctl disable
 
 echo "Installing and applying polybar customisation"
 yay -S polybar
-mv -i .config/polybar ~/.config/polybar
+mv -i .config/polybar ~/.config
              
 echo "Applying Neofetch config"
 #Double check that this works
