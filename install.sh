@@ -25,16 +25,20 @@ fi
 echo "disabling Baloo"
 balooctl disable
 
-echo "Installing and applying polybar customisation"
-yay -S polybar
-mv -i .config/polybar ~/.config
-             
+# Prompt for polybar
+read -r -p "Would you like to Apply the Polybar customisation [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then echo "Installing and applying polybar customisation" &&  cp -R .config/polybar ~/.config && rm -R .config/polybar
+else echo "Skipping Polybar customisation"
+fi
+
+# Neofetch
 echo "Applying Neofetch config"
 #Double check that this works
 mv -i .config/neofetch/config.conf ~/.config/neofetch
 read -r -p "Do you have an image you would like to use in neofetch? (Nyarch is included in .config/neofetch/Nyarch.png) [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
-then read -r -p "Enter the path to the image (Example: /home/kawa/Desktop/Picture.png): " image && echo $image  && cp "$image" /$homesweethome/.config/neofetch && sed -i -e 's|THEIMAGEGOESHERE|$image|g' $homesweethome/.config/neofetch/config.conf
+then read -r -p "Enter the path to the image (Example: /home/kawa/Desktop/Picture.png): " image && cp "$image" "/$homesweethome/.config/neofetch" && sed -i -e "s|THEIMAGEGOESHERE|$image|g" "$homesweethome/.config/neofetch/config.conf"
 else echo "Skipping Neofetch Image" 
 fi                                                                                                                   
 
