@@ -13,6 +13,7 @@ user=$(whoami)
 homesweethome="$HOME"
 
 # Promt to install packages 
+# TODO Move this to a new repo for arch install
 read -r -p "Would you like to install packages in the .pkglist? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then yay -Syu --needed - < pkglist.txt
@@ -26,10 +27,10 @@ echo "disabling Baloo"
 balooctl disable
 
 # Prompt for polybar
-#check if this can overwrite files properly
+# TODO check if this can overwrite files properly
 read -r -p "Would you like to Apply the Polybar customisation [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
-then echo "Installing and applying polybar customisation" &&  cp -R .config/polybar ~/.config && rm -R .config/polybar
+then echo "Installing and applying polybar customisation" &&  cp -R ".config/polybar" "$homesweethome/.config && rm -R .config/polybar"
 else echo "Skipping Polybar customisation"
 fi
 
@@ -42,3 +43,7 @@ then read -r -p "Enter the path to the image (Example: /home/kawa/Desktop/Pictur
 else echo "Skipping Neofetch Image" 
 fi                                                                                                                   
 
+# FSearch config
+# TODO Check that this works
+echo "Applying FSearch conf"
+cp -R ".config/fsearch" "$homesweethome/.config/fsearch" && rm -R ".config/fsearch"
