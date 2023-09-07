@@ -5,7 +5,7 @@ to use
 
 `git clone https://github.com/Seija-Kijin/dotfiles && cd dotfiles && bash install.sh`
 
-
+THIS IS BEING WORKED ON AND VERY LIKELY WILL NOT WORK AS INTENDED
 
 
 ----
