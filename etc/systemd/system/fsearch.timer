@@ -1,0 +1,13 @@
+ [Unit]
+Description=FSearch every 15 minute index
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=15min
+persistant=true
+
+[Install]
+WantedBy=timers.target
+
+
+
