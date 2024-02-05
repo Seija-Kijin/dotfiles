@@ -47,3 +47,11 @@ fi
 # TODO Check that this works
 echo "Applying FSearch conf"
 cp -R ".config/fsearch" "$homesweethome/.config/fsearch" && rm -R ".config/fsearch"
+
+# TODO Add FSearch timer configuration here
+
+# TODO Syncthing config
+
+# TODO Currently my KDE settings are borked, so when they're set up consider trying https://github.com/Prayag2/konsave to save config since KDE is a total clusterfuck
+
+# TODO Insert something about swapfiles here
