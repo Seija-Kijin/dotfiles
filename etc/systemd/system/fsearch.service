@@ -1,0 +1,11 @@
+[Unit]
+Description=FSearch every 15 minute index
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/fsearch.sh
+
+[Install]
+WantedBy=fsearch.timer
+
+
