@@ -47,8 +47,9 @@ fi
 # TODO Check that this works
 echo "Applying FSearch conf"
 cp -R ".config/fsearch" "$homesweethome/.config/fsearch" && rm -R ".config/fsearch"
+ 
+systemctl enable fsearch.timer %% systemctl start fsearch.timer
 
-# TODO Add FSearch timer configuration here
 
 # TODO Syncthing config
 
