@@ -57,6 +57,7 @@ mangohud
 memtest86+
 memtest86+-efi
 mesa
+obsidian
 obs-studio
 okular
 pipewire
