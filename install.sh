@@ -45,10 +45,14 @@ fi
 
 # FSearch config
 # TODO Check that this works
+
+echo Applying FSearch config and adding a timer (Index updates every 15 minutes)
+
+# TODO mv /etc/systemd/system/fsearch /etc/systemd/system... maybe rename the thing to reduce possible issues
 echo "Applying FSearch conf"
 cp -R ".config/fsearch" "$homesweethome/.config/fsearch" && rm -R ".config/fsearch"
  
-systemctl enable fsearch.timer %% systemctl start fsearch.timer
+systemctl enable fsearch.timer && systemctl start fsearch.timer
 
 
 # TODO Syncthing config
