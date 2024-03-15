@@ -1,0 +1,1 @@
+pacstrap -K /mnt base base-devel linux linux-firmware git grub efibootmgr timeshift nano networkmanager pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber reflector zsh zsh-completions zsh-autosuggestions man sudo
