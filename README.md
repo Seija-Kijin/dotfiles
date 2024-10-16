@@ -14,13 +14,11 @@ THIS IS BEING WORKED ON AND VERY LIKELY WILL NOT WORK AS INTENDED
 
 - A list of plugins
 - My Theme
-- Windows 10 MSS Style to aproximate the 10 look
+- Windows 10 MSS Style
 
 ---
-Polybar
-<h6> Contains </h6>
-
-- [Now_playing.py](https://github.com/d093w1z/polybar-now-playing)
-- my bar customization
+Polybar Configuration (X11)
 ![My Polybar](https://github.com/Seija-Kijin/dotfiles/blob/main/Polybar.png)
 
+Waybar Configuration (Wayland)
+![Waybar](https://github.com/Seija-Kijin/dotfiles/blob/main/Waybar.png?raw=true)
