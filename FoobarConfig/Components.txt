@@ -1,0 +1,7 @@
+Tagbox
+Chacon
+Foo BPM
+Lyrics Panel
+Discord Rich Presence
+Simplaylist
+Keep Queue 
