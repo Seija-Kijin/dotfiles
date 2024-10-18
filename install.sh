@@ -57,6 +57,17 @@ systemctl enable fsearch.timer && systemctl start fsearch.timer
 
 # TODO Syncthing config
 
+
 # TODO Currently my KDE settings are borked, so when they're set up consider trying https://github.com/Prayag2/konsave to save config since KDE is a total clusterfuck
 
 # TODO Insert something about swapfiles here
+
+
+# TODO Explain this somewhere, this section will make directories I am familiar with such as /~/Videos/ytdl, /~/Documents/Krita Projects, etc.
+read -r -p "Make ~ directories [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] # Order is home, Documents, Pictures and Videos. This should be adjusted to handle cases where more or less files exist, perhaps you should make the entire tree yuorself here.
+then cd ~ && mkdir Obsidian Keepass Syncthing VMs && cd Documents && mkdir Calendars "Kdenlive projects" Notes Cards Programming Spreadsheets Slides && cd .. && cd Pictures && mkdir Wallpapers && cd .. && cd Videos && mkdir "OBS Recordings" YTDL Lore
+else echo "Skipping direcctory setup"
+fi
+
+
