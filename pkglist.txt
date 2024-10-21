@@ -10,6 +10,7 @@ archlinux-keyring
 ark
 audacity
 baobab
+btop
 calibre
 konsole
 peazip
