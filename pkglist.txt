@@ -117,3 +117,23 @@ wine
 winetricks
 wireplumber
 yakuake
+
+# Check these.
+btop 
+coolercontroler
+helvum
+goverlay 
+fooyin
+guitarix
+lact
+sunshine
+vim
+openrgb
+ventoy
+tonelib-gfx
+skanlite
+furmark-gui
+
+
+
+
